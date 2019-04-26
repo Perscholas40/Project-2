@@ -1,1 +1,1 @@
-# Project-2
+# Morris Brown College Band Camp 

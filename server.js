@@ -18,3 +18,7 @@ app.use('/', routes)
 app.get('/', (req, res) => {
   res.render("user")
   });
+
+
+
+
