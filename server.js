@@ -1,24 +1,20 @@
-const express = require('express');
+const express = require ('express');
+const path = require('path');
 const app = express();
 const methodOverride = require('method-override');
-​
-​
-// const userApi = require('./api/userApi.js');
-// const accountApi = require('./api/waysApi.js');
-//sets up hbs
-app.set('view engine', 'hbs');
-app.use(express.static(__dirname+"/public"));
-//setup middleware for handling html forms
-//where body is a query string 
-app.use(express.urlencoded());
-app.use(methodOverride('_method'))
-​
-app.use('/', routes)
-​
-app.get('/', (req, res) => {
-  res.render("user")
-  });
+const routes = require('./routes/index')
 
+app.set('view engine', 'hbs');
+
+app.use(express.static(path.join(__dirname, '/Public')));
+app.use('/', routes); 
+app.use(methodOverride('_method'));
+
+
+
+const PORT = process.env.PORT || 3000; 
+
+app.listen(PORT, () => console.log('Server started on port...'));
 
 
 
