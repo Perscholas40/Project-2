@@ -1,18 +1,11 @@
-<h1>Students</h1>
+<h1>All Students</h1>
 
-<form action="/registerStudents/?_method=PUT" method="POST">
+<a href="/registerStudents/new">
+<input type="submit" value="Register New Student">
+</a>
 
- <label for="name">Name</label>
- <input type="text" name="name" value="studentName" />
-
- <label for="name">Instrument</label>
- <input type="text" name="instrument" value="instrumentName" />
-
- <label for="name">School</label>
- <input type="text" name= "school" value="school"  />
- 
- <label for="name">Age</label>
- <input type="number" name= "age" value="age"  />
-
- <input type="submit" value="register" />
-</form>
+{{#each students}}
+<a href="/registerStudents/{{id}}">
+    <h2>{{Name}}</h2>
+</a>
+{{/each}}

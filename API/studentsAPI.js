@@ -27,8 +27,8 @@ const createStudents = (newStudent) => {
 
 // Replace Student
 
-const replaceStudents = () => {
-    return studentsCollection.findByIdAndUpdate()
+const replaceStudents = (x, y) => {
+    return studentsCollection.findByIdAndUpdate(x, y)
 }
 
 // show single Student
