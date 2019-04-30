@@ -10,5 +10,4 @@ mongoose.connect("mongodb://localhost/register", {useNewUrlParser:true}).then(()
 
 
 
-
 module.exports = mongoose
