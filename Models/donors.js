@@ -1,4 +1,4 @@
-const mongoose = require("../db/connection");
+const mongoose = require("../db/connection.js");
 const Schema = mongoose.Schema;
 
 
@@ -11,6 +11,42 @@ const donorSchema = new Schema ({
     Amount: Number
 });
 
+let donorCollection = mongoose.model('Donors', donorSchema)
 
+// Show all donors
 
-module.exports = mongoose.model('donor', donorSchema);
+const allDonors = () => {
+    return donorCollection.find()
+}
+
+// Create
+
+const createDonor = () => {
+    return donorCollection.create()
+}
+
+// replace
+
+const replaceDonor = () => {
+    return donorCollection.findByIdAndUpdate()
+}
+
+// show single donor 
+
+const showDonor = () => {
+    return donorCollection.findById()
+}
+
+// delete
+
+const deleteDonor = () => {
+    return donorCollection.findByIdAndDelete()
+}
+
+module.exports = {
+    allDonors,
+    createDonor,
+    replaceDonor,
+    showDonor,
+    deleteDonor
+};
