@@ -15,7 +15,7 @@ let studentsCollection = mongoose.model('Students', studentsSchema)
 
 // Show all Students
 
-const allStudents = () => {
+function allStudents(){
     return studentsCollection.find()
 }
 
@@ -54,4 +54,3 @@ module.exports = {
 
 
 
-module.exports = mongoose.model('students',studentsSchema);
