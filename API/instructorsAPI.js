@@ -6,9 +6,8 @@ const Schema = mongoose.Schema;
 
 const instructorsSchema = new Schema ({
     Name: String,
-    Organization: String,
-    Years: Number,
-    
+    Instrument: String,
+    Years: Number,  
 });
 
 let instructorsCollection = mongoose.model('Instructors', instructorsSchema)
@@ -21,32 +20,32 @@ const allInstructors = () => {
 
 // Create
 
-const createInstructors = () => {
-    return instructorsCollection.create()
+const createInstructors = (newInstructor) => {
+    return instructorsCollection.create(newInstructor)
 }
 
 // Replace
 
-const replaceInstructors = () => {
-    return instructorsCollection.findByIdAndUpdate()
+const replaceInstructors = (x, y) => {
+    return instructorsCollection.findByIdAndUpdate(x, y)
 }
 
 // show single donor 
 
-const showInsructors = () => {
-    return instructorsCollection.findById()
+const showInstructors = (newInstructor) => {
+    return instructorsCollection.findById(newInstructor)
 }
 
 // delete
 
-const deleteInstructors = () => {
-    return instructorsCollection.findByIdAndDelete()
+const deleteInstructors = (newInstructor) => {
+    return instructorsCollection.findByIdAndDelete(newInstructor)
 }
 
 module.exports = {
     allInstructors,
     createInstructors,
     replaceInstructors,
-    showInsructors,
+    showInstructors,
     deleteInstructors
 };
