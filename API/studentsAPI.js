@@ -21,8 +21,8 @@ function allStudents(){
 
 // Create Student
 
-const createStudents = () => {
-    return studentsCollection.create()
+const createStudents = (newStudent) => {
+    return studentsCollection.create(newStudent)
 }
 
 // Replace Student
@@ -33,14 +33,14 @@ const replaceStudents = () => {
 
 // show single Student
 
-const showStudents = () => {
-    return studentsCollection.findById()
+const showStudents = (newStudent) => {
+    return studentsCollection.findById(newStudent)
 }
 
 // delete student
 
-const deleteStudents = () => {
-    return studentsCollection.findByIdAndDelete()
+const deleteStudents = (newStudent) => {
+    return studentsCollection.findByIdAndDelete(newStudent)
 }
 
 module.exports = {

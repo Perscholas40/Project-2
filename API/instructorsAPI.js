@@ -7,7 +7,7 @@ const Schema = mongoose.Schema;
 const instructorsSchema = new Schema ({
     Name: String,
     Organization: String,
-    Instrument: String,
+    Years: Number,
     
 });
 
