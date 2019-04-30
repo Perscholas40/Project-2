@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
   res.render('landing')
 });
 
-// Students Page
+// Students
 app.get('/registerStudents', (req, res) => {
   studentsApi.allStudents()
     .then(students => {
@@ -53,22 +53,25 @@ app.get('/registerStudents/:id/replace', (req, res) => {
   })
 })
 
-// Update Students
 app.put('/registerStudents/:id', (req, res) => {
   studentsApi.replaceStudents(req.params.id, req.body)
   .then(() => {
-    res.redirect('/registerStudents/')
+    res.redirect('/registerStudents')
   })
 })
 
-app.delete('/registerStudents/:id/deleta')
+app.delete('/registerStudents/:id', (req,res) => {
+  studentsApi.deleteStudents(req.params.id)
+  .then(() => {
+    res.redirect('/registerStudents')
+  })
+})
 
-// Donors Page
 app.get('Donors', (req, res) => {
   res.render('Donors')
 });
 
-// Instructors Page
+// Instructors 
 app.get('Instructors', (req, res) => {
   res.render('Students')
 });

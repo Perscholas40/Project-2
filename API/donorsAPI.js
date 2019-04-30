@@ -21,32 +21,32 @@ const allDonors = () => {
 
 // Create donors
 
-const createDonor = () => {
+const createDonors = () => {
     return donorCollection.create()
 }
 
 // replace donor
 
-const replaceDonor = () => {
+const replaceDonors = () => {
     return donorCollection.findByIdAndUpdate()
 }
 
 // show single donor 
 
-const showDonor = () => {
+const showDonors = () => {
     return donorCollection.findById()
 }
 
 // delete donor
 
-const deleteDonor = () => {
+const deleteDonors = () => {
     return donorCollection.findByIdAndDelete()
 }
 
 module.exports = {
     allDonors,
-    createDonor,
-    replaceDonor,
-    showDonor,
-    deleteDonor
+    createDonors,
+    replaceDonors,
+    showDonors,
+    deleteDonors
 };
