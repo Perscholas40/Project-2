@@ -21,26 +21,26 @@ const allDonors = () => {
 
 // Create donors
 
-const createDonors = () => {
-    return donorCollection.create()
+const createDonors = (newDonor) => {
+    return donorCollection.create(newDonor)
 }
 
 // replace donor
 
-const replaceDonors = () => {
-    return donorCollection.findByIdAndUpdate()
+const replaceDonors = (newDonor) => {
+    return donorCollection.findByIdAndUpdate(newDonor)
 }
 
 // show single donor 
 
-const showDonors = () => {
-    return donorCollection.findById()
+const showDonors = (newDonor) => {
+    return donorCollection.findById(newDonor)
 }
 
 // delete donor
 
-const deleteDonors = () => {
-    return donorCollection.findByIdAndDelete()
+const deleteDonors = (newDonor) => {
+    return donorCollection.findByIdAndDelete(newDonor)
 }
 
 module.exports = {

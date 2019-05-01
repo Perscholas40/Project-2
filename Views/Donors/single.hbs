@@ -1,0 +1,12 @@
+<h1>{{donor.Name}}</h1>
+<h2>{{donor.Organization}}</h2>
+<h2>{{donor.Instrument}}</h2>
+<h2>{{donor.Amount}}</h2>
+
+<a href="/registerDonors/{{donor.id}}/replace">
+<input type="submit" value="replace" />
+</a>
+
+<form action="/registerDonors/{{donor.id}}/?_method=delete" method="post">
+<input type="submit" value="delete" />
+</form>
