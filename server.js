@@ -13,7 +13,7 @@ app.set('view engine', 'hbs');
 
 // Landing Page
 app.get('/', (req, res) => {
-  res.render('landing')
+  res.send('landing')
 });
 // #######################################################
 // ################### STUDENTS ##########################
@@ -183,7 +183,8 @@ app.use('/public', express.static("public"))
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => console.log('Server started on port...'));
+app.listen(PORT, () => {console.log('Server started on port...')
+});
 
 
 
