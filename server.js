@@ -10,9 +10,6 @@ app.use(express.urlencoded())
 app.use(methodOverride('_method'));
 app.set('view engine', 'hbs');
 
-// app.use(express.static(__dirname + '/public'))
-// Static Style Folder
-// app.use(express.static(path.join(__dirname, 'public')));
 
 // Landing Page
 app.get('/', (req, res) => {

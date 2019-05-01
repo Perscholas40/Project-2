@@ -1,4 +1,40 @@
 body {
-    background: rgb(73, 4, 73);
+    background: rgb(44, 2, 44);
     color: white; 
+}
+.titleContainer{
+    border: solid black;
+    width: 100vw;
+    height: 30vh;
+    text-align: center;
+
+}
+.selectionContainer{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    /* border: solid black; */
+    align-items: center;
+    width: 10vw;
+    margin-top: 20px;
+
+    
+}
+.studentsButton{
+    display: flex;
+    border: solid black;
+    padding: 70px;
+    width: 10vw;  
+}
+.instructorsButton{
+    display: flex;
+    border: solid black;
+    padding: 70px;
+    width: 10vw;  
+}
+.donorsButton{
+    display: flex;
+    border: solid black;
+    padding: 70px;
+    width: 10vw;   
 }
