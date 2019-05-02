@@ -1,18 +1,20 @@
-<h1>Students</h1>
+<div class="registrationContainer">
+    <h1>Students</h1>
 
-<form action="/registerStudents/{{student.id}}?_method=put" method="POST">
+    <form action="/registerStudents/{{student.id}}?_method=put" method="POST">
 
- <label for="name">Name</label>
- <input type="text" name="Name" placeholder="studentName" />
-<br>
- <label for="name">Instrument</label>
- <input type="text" name="Instrument" placeholder="instrumentName" />
-<br>
- <label for="name">School</label>
- <input type="text" name= "School" placeholder="school"  />
- <br>
- <label for="name">Age</label>
- <input type="number" name= "Age" placeholder="age"  />
-<br>
- <input type="submit" value="register" />
-</form>
+        <label for="name">Name</label>
+        <input type="text" name="Name" placeholder="studentName" />
+        <br>
+        <label for="name">Instrument</label>
+        <input type="text" name="Instrument" placeholder="instrumentName" />
+        <br>
+        <label for="name">School</label>
+        <input type="text" name="School" placeholder="school" />
+        <br>
+        <label for="name">Age</label>
+        <input type="number" name="Age" placeholder="age" />
+        <br>
+        <input type="submit" value="register" />
+    </form>
+</div>

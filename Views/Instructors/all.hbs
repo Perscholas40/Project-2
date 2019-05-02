@@ -1,11 +1,15 @@
-<h1>Registered Instructors</h1>
 
-<a href="/registerInstructors/new">
-<input type="submit" value="Register New Instructor">
-</a>
 
-{{#each instructor}}
-<a href="/registerInstructors/{{id}}">
-    <h2>{{Name}}</h2>
-</a>
-{{/each}}
+<div class="registrationContainer">
+    <h1>Instructor Registration</h1>
+
+    <a href="/registerInstructors/new">
+        <input type="submit" value="Register New Instructor">
+    </a>
+
+    {{#each instructor}}
+    <a href="/registerInstructors/{{id}}">
+        <h2>{{Name}}</h2>
+    </a>
+    {{/each}}
+</div>

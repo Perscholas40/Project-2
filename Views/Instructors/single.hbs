@@ -1,11 +1,13 @@
-<h1>{{instructor.Name}}</h1>
-<h2>{{instructor.Instrument}}</h2>
-<h2>{{instructor.Years}}</h2>
+<div class="registrationContainer">
+    <h1>{{instructor.Name}}</h1>
+    <h1>{{instructor.Instrument}}</h1>
+    <h1>{{instructor.Years + "years old"}}</h1>
 
-<a href="/registerInstructors/{{instructor.id}}/replace">
-<input type="submit" value="replace" />
-</a>
+    <a href="/registerInstructors/{{instructor.id}}/replace">
+        <input type="submit" value="replace" />
+    </a>
 
-<form action="/registerInstructors/{{instructor.id}}/?_method=delete" method="post">
-<input type="submit" value="delete" />
-</form>
+    <form action="/registerInstructors/{{instructor.id}}/?_method=delete" method="post">
+        <input type="submit" value="delete" />
+    </form>
+</div>

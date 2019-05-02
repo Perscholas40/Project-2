@@ -1,12 +1,14 @@
-<h1>{{student.Name}}</h1>
-<h2>{{student.Instrument}}</h2>
-<h2>{{student.School}}</h2>
-<h2>{{student.Age}}</h2>
+<div class="registrationContainer">
+    <h1>{{student.Name}}</h1>
+    <h1>{{student.Instrument}}</h1>
+    <h1>{{student.School}}</h1>
+    <h1>{{student.Age}}</h1>
 
-<a href="/registerStudents/{{student.id}}/replace">
-<input type="submit" value="replace" />
-</a>
+    <a href="/registerStudents/{{student.id}}/replace">
+        <input type="submit" value="replace" />
+    </a>
 
-<form action="/registerStudents/{{student.id}}/?_method=delete" method="post">
-<input type="submit" value="delete" />
-</form>
+    <form action="/registerStudents/{{student.id}}/?_method=delete" method="post">
+        <input type="submit" value="delete" />
+    </form>
+</div>

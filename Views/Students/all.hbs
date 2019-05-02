@@ -1,11 +1,15 @@
-<h1>Registered Students</h1>
 
-<a href="/registerStudents/new">
-<input type="submit" value="Register New Student">
-</a>
 
-{{#each students}}
-<a href="/registerStudents/{{id}}">
-    <h2>{{Name}}</h2>
-</a>
-{{/each}}
+<div class="registrationContainer">
+    <h1>Student Registration</h1>
+
+    <a href="/registerStudents/new">
+        <input type="submit" value="Register New Student">
+    </a>
+
+    {{#each students}}
+    <a href="/registerStudents/{{id}}">
+        <h2>{{Name}}</h2>
+    </a>
+    {{/each}}
+</div>

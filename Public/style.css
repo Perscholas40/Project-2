@@ -75,7 +75,7 @@ body {
 .mbcLOGO{
     position: absolute;
     margin-top: 100vh;
-    margin-left: 30vw;
+    margin-left: 31vw;
     border-radius: 15px;
    
 }
@@ -91,4 +91,17 @@ h3{
 a{
     text-decoration: none;
     color: white;
+}
+
+.registrationContainer{
+   
+    margin-left: 30vw;
+    margin-top: 5vh;
+    border: solid black;
+    width: 25vw;
+    height: 75vh;
+    padding: 5%;
+    background: black;
+    border-radius: 20%;
+
 }

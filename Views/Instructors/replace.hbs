@@ -1,15 +1,17 @@
-<h1>Instructors</h1>
+<div class="registrationContainer">
+  <h1>Instructors</h1>
 
-<form action="/registerInstructors/{{instructor.id}}?_method=put" method="POST">
+  <form action="/registerInstructors/{{instructor.id}}?_method=put" method="POST">
 
-  <label for="name">Name</label>
- <input type="text" name="Name" placeholder="instructorName" />
-<br>
- <label for="name">Instrument Family</label>
- <input type="text" name="Instrument" placeholder="InstrumentFamilyName" />
-<br>
- <label for="name">Experience</label>
- <input type="number" name= "Years" placeholder="Experience/Years"  />
- <br>
- <input type="submit" value="register" />
-</form>
+    <label for="name">Name</label>
+    <input type="text" name="Name" placeholder="instructorName" />
+    <br>
+    <label for="name">Instrument Family</label>
+    <input type="text" name="Instrument" placeholder="InstrumentFamilyName" />
+    <br>
+    <label for="name">Experience</label>
+    <input type="number" name="Years" placeholder="Experience/Years" />
+    <br>
+    <input type="submit" value="register" />
+  </form>
+</div>

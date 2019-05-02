@@ -12,7 +12,7 @@ app.set('view engine', 'hbs');
 
 
 // Landing Page
-app.get('/landing', (req, res) => {
+app.get('/', (req, res) => {
   res.render('landing')
 });
 // #######################################################
