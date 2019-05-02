@@ -1,0 +1,11 @@
+<h1>{{instructor.Name}}</h1>
+<h2>{{instructor.Instrument}}</h2>
+<h2>{{instructor.Years}}</h2>
+
+<a href="/registerInstructors/{{instructor.id}}/replace">
+<input type="submit" value="replace" />
+</a>
+
+<form action="/registerInstructors/{{instructor.id}}/?_method=delete" method="post">
+<input type="submit" value="delete" />
+</form>
