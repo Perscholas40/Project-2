@@ -21,3 +21,6 @@ Deployed App ---> https://dashboard.heroku.com/apps/ancient-sea-79792
 - Serves as a camp registration page for Students, Instructors, and Donors
 
 
+[whiteBoard2.pdf](https://github.com/Perscholas40/Project-2/files/3138220/whiteBoard2.pdf)
+[whiteBoard1.pdf](https://github.com/Perscholas40/Project-2/files/3138222/whiteBoard1.pdf)
+![ERD](https://user-images.githubusercontent.com/48021416/57078964-5a3bd480-6cbd-11e9-841e-cc47f670ff27.jpg)
