@@ -13,4 +13,9 @@ Deployed App ---> https://dashboard.heroku.com/apps/ancient-sea-79792
 - NodeJS, Express, Handlebars, CSS, Javascript
 - MongoDB, Mongoose 
 
+## Features 
+
+- Allows user access to a brief intro video
+- Serves as a camp registration page for Students, Instructors, and Donors
+
 
