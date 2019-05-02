@@ -6,7 +6,7 @@
 Trello Board ---> https://trello.com/b/HTmeKV2T/project-2-planning
 
 
-Deployed App ---> https://dashboard.heroku.com/apps/ancient-sea-79792
+Deployed App ---> https://ancient-sea-79792.herokuapp.com/
 
 ## Technologies Used
 
@@ -26,3 +26,6 @@ Deployed App ---> https://dashboard.heroku.com/apps/ancient-sea-79792
 =======
 >>>>>>> ec1e4ee20733f9f235029327ca5b5873b06b296f
 
+[whiteBoard2.pdf](https://github.com/Perscholas40/Project-2/files/3138220/whiteBoard2.pdf)
+[whiteBoard1.pdf](https://github.com/Perscholas40/Project-2/files/3138222/whiteBoard1.pdf)
+![ERD](https://user-images.githubusercontent.com/48021416/57078964-5a3bd480-6cbd-11e9-841e-cc47f670ff27.jpg)
