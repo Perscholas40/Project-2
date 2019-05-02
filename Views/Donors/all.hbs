@@ -1,11 +1,17 @@
-<h1>Registered Donations</h1>
 
-<a href="/registerDonors/new">
-<input type="submit" value="Register New Donor">
-</a>
 
-{{#each donor}}
-<a href="/registerDonors/{{id}}">
-    <h2>{{Name}}</h2>
-</a>
-{{/each}}
+<div class="registrationContainer">
+    <h1>Donor Registration</h1>
+
+    <h5>Thanks for your contribution!</h5>
+
+    <a href="/registerDonors/new">
+        <input type="submit" value="Register New Donor">
+    </a>
+
+    {{#each donor}}
+    <a href="/registerDonors/{{id}}">
+        <h2>{{Name}}</h2>
+    </a>
+    {{/each}}
+</div>

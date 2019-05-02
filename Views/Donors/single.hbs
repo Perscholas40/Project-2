@@ -1,12 +1,14 @@
-<h1>{{donor.Name}}</h1>
-<h2>{{donor.Organization}}</h2>
-<h2>{{donor.Instrument}}</h2>
-<h2>{{donor.Amount}}</h2>
+<div class="registrationContainer">
+    <h1>{{donor.Name}}</h1>
+    <h1>{{donor.Organization}}</h1>
+    <h1>{{donor.Instrument}}</h1>
+    <h1>{{donor.Amount}}</h1>
 
-<a href="/registerDonors/{{donor.id}}/replace">
-<input type="submit" value="replace" />
-</a>
+    <a href="/registerDonors/{{donor.id}}/replace">
+        <input type="submit" value="replace" />
+    </a>
 
-<form action="/registerDonors/{{donor.id}}/?_method=delete" method="post">
-<input type="submit" value="delete" />
-</form>
+    <form action="/registerDonors/{{donor.id}}/?_method=delete" method="post">
+        <input type="submit" value="delete" />
+    </form>
+</div>
