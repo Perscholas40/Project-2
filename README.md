@@ -12,6 +12,8 @@ Deployed App ---> https://dashboard.heroku.com/apps/ancient-sea-79792
 
 - NodeJS, Express, Handlebars, CSS, Javascript
 - MongoDB, Mongoose 
+- Project Planning: Trello
+- Project Deployment: Heroku
 
 ## Features 
 
