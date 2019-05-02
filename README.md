@@ -6,7 +6,7 @@
 Trello Board ---> https://trello.com/b/HTmeKV2T/project-2-planning
 
 
-Deployed App ---> https://dashboard.heroku.com/apps/ancient-sea-79792
+Deployed App ---> https://ancient-sea-79792.herokuapp.com/
 
 ## Technologies Used
 
