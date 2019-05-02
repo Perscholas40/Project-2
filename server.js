@@ -5,10 +5,11 @@ const methodOverride = require('method-override');
 const studentsApi = require('./API/studentsAPI.js')
 const instructorsApi = require('./API/instructorsAPI.js')
 const donorsApi = require('./API/donorsAPI.js')
-app.use('/public', express.static("public"))
+
+app.use(express.static("./public"))
 app.use(express.urlencoded())
 app.use(methodOverride('_method'));
-app.set('views engine', 'hbs');
+app.set('view engine', 'hbs');
 
 
 // Landing Page
