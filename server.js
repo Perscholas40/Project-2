@@ -8,7 +8,7 @@ const donorsApi = require('./API/donorsAPI.js')
 app.use('/public', express.static("public"))
 app.use(express.urlencoded())
 app.use(methodOverride('_method'));
-app.set('view engine', 'hbs');
+app.set('views engine', 'hbs');
 
 
 // Landing Page
