@@ -1,40 +1,94 @@
 body {
-    background: rgb(44, 2, 44);
+    background:  rgb(51, 1, 97);
     color: white; 
+    
 }
 .titleContainer{
+    
     border: solid black;
-    width: 100vw;
-    height: 30vh;
+    position: absolute;
+    width: 70vw;
+    height: 170vh;
+    left: 30px;
     text-align: center;
+    margin-left: 13%;
+    background: black;
+
+    
 
 }
 .selectionContainer{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     /* border: solid black; */
     align-items: center;
-    width: 10vw;
-    margin-top: 20px;
+    width: 20vw;
+    margin-left: -10px;
+    background: rgb(51, 1, 97);
+    margin-top: 60px;
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
 
-    
 }
 .studentsButton{
     display: flex;
-    border: solid black;
+    /* border: solid white; */
     padding: 70px;
-    width: 10vw;  
+    width: 13vw; 
+    margin-bottom: 15px;
+    background: black;
+    border-radius: 5px;
 }
 .instructorsButton{
     display: flex;
-    border: solid black;
+    /* border: solid white; */
     padding: 70px;
-    width: 10vw;  
+    width: 13vw;  
+    margin-bottom: 15px;
+    background: black;
+    border-radius: 5px;
+    text-align: center;
 }
 .donorsButton{
     display: flex;
-    border: solid black;
+    /* border: solid white; */
     padding: 70px;
-    width: 10vw;   
+    width: 13vw;   
+    background: black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.titleH1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 70px;
+    margin-top: -50px;
+    
+}
+.video{
+    margin-top: -75px;
+
+}
+.mbcLOGO{
+    position: absolute;
+    margin-top: 100vh;
+    margin-left: 30vw;
+    border-radius: 15px;
+   
+}
+.bandCampText{
+    font-family: fantasy;  
+}
+h2{
+    font-size: 50px;
+}
+h3{
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
